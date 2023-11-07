@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Music Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="player">
+        <div class="player_box">
+            <!-- Player's Song Details Display -->
+            <div class="player_details">
+                <div class="now_playing">SONG PLAYING x OF y</div>
+                <div class="music_image"></div>
+                <div class="music_name">Song Name</div>
+                <div class="music_artist">Song Artist</div>
+            </div>
+            <div class="slider_container">
+                <div class="current_time">00:00</div>
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                <div class="total_duration">00:00</div>
+            </div>
+            <!-- Player's button -->
+            <div class="buttons">
+                <div class="prev_music" onclick="prevMusic()">
+                    <i class="fa fa-step-backward fa-2x"></i>
+                </div>
+                <div class="playpause_music" onclick="playpauseMusic()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div>
+                <div class="next_music" onclick="nextMusic()">
+                    <i class="fa fa-step-forward fa-2x"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
